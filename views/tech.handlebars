@@ -1,0 +1,23 @@
+<div class="container">
+    <div class="card">
+        <h2>Technology Scrape articles</h2>
+        <div class="card-body article">
+
+            {{#each data}}
+            <div class='card row'>
+                <div class='col-10'>
+                    <h5> {{this.title}}</h5>
+                    <a href="{{this.link}}" target="_blank">{{this.link}}</a>
+                    <p>{{this.excerpt}}</p>
+                </div>
+                <div class='col-2'>
+                    <button type="button" class="btn btn-primary">Save</button>
+                </div>
+            </div>
+
+            <br>
+            {{/each}}
+
+        </div>
+    </div>
+</div>

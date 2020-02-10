@@ -1,0 +1,26 @@
+<div class="container">
+    <div class="card">
+        <h2>Top 250 Rated Movies</h2>
+        <div class="card-body article">
+
+
+
+            {{#each data}}
+            <div class="card container">
+                <div class='row'>
+                    <div class='col-8'>
+                        <h5> {{this.title}}</h5>
+                        <a href="https://www.imdb.com{{this.link}}" target="_blank">More Info</a>
+                        <h6>Year: {{this.excerpt}}</h6>
+                    </div>
+                    <div class='col-4  align-self-center'>
+                        <button type="button" class="btn btn-primary ">Save</button>
+                    </div>
+                </div>
+            </div>
+
+            <br>
+            {{/each}}
+        </div>
+    </div>
+</div>
