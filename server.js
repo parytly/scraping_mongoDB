@@ -2,6 +2,7 @@ var express = require("express");
 var logger = require("morgan");
 var mongoose = require("mongoose");
 var exphbs = require("express-handlebars")
+var path = require("path");
 
 // Our scraping tools
 // Axios is a promised-based http library, similar to jQuery's Ajax method
@@ -66,7 +67,7 @@ app.get("/scrapetech", function (req, res) {
                 });
             // inform user scrape completed
             // res.render("index", data)
-            console.log(data)
+            // console.log(data)
         });
     });
 });
@@ -112,6 +113,11 @@ app.get("/scrapemovies", function (req, res) {
         // inform user scrape completed
         res.json("Scrape Movies Site Completed")
     });
+});
+
+// Route for Home page
+app.get("/", function (req, res) {
+    res.sendFile(path.join(__dirname, "index.html"));
 });
 
 // Route for getting all Articles from the db in mongo
