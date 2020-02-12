@@ -1,0 +1,31 @@
+{
+  "name": "scraping_mongodb",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "dependencies": {
+    "axios": "^0.19.2",
+    "cheerio": "^1.0.0-rc.3",
+    "express-handlebars": "^3.1.0",
+    "express": "^4.17.1",
+    "handlebars": "^4.5.0",
+    "morgan": "^1.9.1",
+    "path": "^0.12.7",
+    "mongoose": "^5.8.11"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/parytly/scraping_mongoDB.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/parytly/scraping_mongoDB/issues"
+  },
+  "homepage": "https://github.com/parytly/scraping_mongoDB#readme"
+}
