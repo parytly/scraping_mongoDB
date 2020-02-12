@@ -6,12 +6,12 @@
             <div class="card container">
                 <div class='row'>
                     <div class='col-8'>
-                        <h5 class='title'>{{this.title}}</h5>
-                        <a class='link' href="{this.link}}" target="_blank">link to article</a>
+                        <h5 class='title' id='{{this._id}}'>{{this.title}}</h5>
+                        <a class='link' href="{{this.link}}" target="_blank">link to article</a>
                         <h6 class='excerpt'> {{this.excerpt}}</h6>
                     </div>
                     <div class='col-4  align-self-center domBtn'>
-                        <button type="button" class="btn btn-primary saveArticle ">Save</button>
+                        <button type="button" class="btn btn-primary saveArticle " data-id="{{this._id}}">Save</button>
                     </div>
                 </div>
             </div>

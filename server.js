@@ -60,7 +60,7 @@ app.get("/scrapetech", function (req, res) {
             db.Article.create(result)
                 .then(function (dbArticle) {
                     // debugging to log result of title, link, & excerpt
-                    // console.log(dbArticle);
+                    console.log(dbArticle);
                 })
                 .catch(function (err) {
                     console.log(err);
@@ -128,7 +128,7 @@ app.get("/articles", function (req, res) {
             // If we were able to successfully find Articles, send them back to the client
             // sends data to tech.handlebars page
             res.render("tech", { data: dbArticle })
-            // console.log(dbArticle)
+            console.log(dbArticle)
         })
         .catch(function (err) {
             // If an error occurred, send it to the client
