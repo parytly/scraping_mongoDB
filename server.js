@@ -40,7 +40,7 @@ var MONGODB_URI = process.env.MONGODB_URI || "mongodb://scrapingMongo:Yrap91411@
 
 // Connect to the Mongo DB
 mongoose.connect(MONGODB_URI, { useNewUrlParser: true });
-
+// hey
 // Routes
 app.get("/scrapetech", function (req, res) {
     axios.get("https://www.technology.org/category/space/space-exploration/?gclid=CjwKCAiAj-_xBRBjEiwAmRbqYrqiO_Y45bK6L-DDrPyxjBYBrWWQFS6cDruWyqca8NIWAXjyIvsTdxoC6tQQAvD_BwE").then(function (response) {
